@@ -138,28 +138,7 @@ Start the worker service:
 npm run dev
 ```
 
-## Environment Variables
 
-Make sure to set up the necessary environment variables for each service. Create `.env` files in each service directory with the appropriate configuration:
-
-### Primary Backend (.env)
-```
-DATABASE_URL="postgresql://postgres:mysecretpassword@localhost:5432/myapp"
-PORT=3000
-```
-
-### Frontend (.env)
-```
-NEXT_PUBLIC_API_URL=http://localhost:3000
-```
-
-### Services (.env)
-```
-DATABASE_URL="postgresql://postgres:mysecretpassword@localhost:5432/myapp"
-KAFKA_BROKER=localhost:9092
-```
-
-*Apply this configuration to: `hooks/.env`, `processor/.env`, `worker/.env`*
 
 ## Development Workflow
 
